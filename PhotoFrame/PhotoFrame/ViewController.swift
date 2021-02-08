@@ -29,5 +29,12 @@ class ViewController: UIViewController {
         attributedStr.addAttribute(.backgroundColor, value: UIColor.red, range: (firstDescription.text as! NSString).range(of: "ller"))
         firstDescription.attributedText = attributedStr
     }
+    
+
+    @IBAction func nextButtonTouched(_ sender: Any) {
+        self.firstLabel.textColor = UIColor.blue
+        self.firstLabel.backgroundColor = UIColor.yellow
+        self.firstLabel.alpha = 0.5
+    }
 }
 
