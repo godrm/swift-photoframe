@@ -16,19 +16,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5W-qM-gFq">
-                                <rect key="frame" x="192" y="433" width="30" height="30"/>
-                                <state key="normal" title="First"/>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="photoLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BYa-Wv-5Z7">
+                                <rect key="frame" x="124.5" y="427.5" width="165" height="41"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFN-HM-2NV">
+                                <rect key="frame" x="186" y="493.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="i5W-qM-gFq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="deg-Vh-bx6"/>
-                            <constraint firstItem="i5W-qM-gFq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="u1o-CI-LWC"/>
+                            <constraint firstItem="BYa-Wv-5Z7" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ICq-KB-1vs"/>
+                            <constraint firstItem="BYa-Wv-5Z7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="deN-qh-en6"/>
+                            <constraint firstItem="qFN-HM-2NV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gDT-ii-GXT"/>
+                            <constraint firstItem="qFN-HM-2NV" firstAttribute="top" secondItem="BYa-Wv-5Z7" secondAttribute="bottom" constant="25" id="sPY-Yb-cKt"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="First" image="pencil" catalog="system" id="Kwi-aH-6hQ"/>
+                    <connections>
+                        <outlet property="firstDescription" destination="qFN-HM-2NV" id="2lS-O7-ihd"/>
+                        <outlet property="firstLabel" destination="BYa-Wv-5Z7" id="3dx-vs-8yt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,16 +58,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ewZ-Fl-8OC">
-                                <rect key="frame" x="181" y="433" width="52" height="30"/>
-                                <state key="normal" title="Second"/>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdW-R4-p6u">
+                                <rect key="frame" x="186" y="437.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ROV-Ou-iHc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ewZ-Fl-8OC" firstAttribute="centerX" secondItem="GSi-w1-4hd" secondAttribute="centerX" id="mlM-Gm-5xP"/>
-                            <constraint firstItem="ewZ-Fl-8OC" firstAttribute="centerY" secondItem="GSi-w1-4hd" secondAttribute="centerY" id="zdS-0g-ZEL"/>
+                            <constraint firstItem="OdW-R4-p6u" firstAttribute="centerY" secondItem="GSi-w1-4hd" secondAttribute="centerY" id="4K8-hY-xxY"/>
+                            <constraint firstItem="OdW-R4-p6u" firstAttribute="centerX" secondItem="GSi-w1-4hd" secondAttribute="centerX" id="OwA-PB-DuE"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Second" image="folder.badge.plus" catalog="system" id="psz-aC-NOk"/>
@@ -66,6 +84,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="eoU-PL-6bq" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="krD-4X-Cot">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -84,6 +103,12 @@
         <image name="pencil" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
